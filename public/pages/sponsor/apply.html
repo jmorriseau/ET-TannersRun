@@ -1,0 +1,120 @@
+<div class="content-container">
+  <main>
+    <h1>Sponsor Form</h1>
+    <p>Your sponsorship of the Tanner B. Road Race is very much appreciated. All net proceeds benefit various family and children’s
+      charities and programs.<br /><br /> The deadline to submit sponsor forms is August 15, 2017.</p>
+
+    <form name="sc.reviewForm" ng-submit="sc.addSponsor()" ng-hide="sc.success === true">
+
+      <div class="form-row">
+        <label>Name of Company</label>
+        <input type="text" name="nameOfCompany" placeholder="ABC Company" ng-maxlength="150" ng-minlength="2" required ng-model="sc.companyName"/>
+        <div class="form-error" ng-show="sc.reviewForm.nameOfCompany.$dirty && sc.reviewForm.nameOfCompany.$invalid && sc.isSubmitted">
+          Company name should be at least 2 character in length.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Address Line 1</label>
+        <input type="text" name="addressLine1" placeholder="15 Main St" ng-pattern="/^\d+\s[A-z]+\s[A-z]+/" required ng-model="sc.addressOne"/>
+        <div class="form-error" ng-show="sc.reviewForm.addressLine1.$dirty && sc.reviewForm.addressLine1.$invalid && sc.isSubmitted">
+          Address should be in the proper format (ex: 1 Main St).
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Address Line 2</label>
+        <input type="text" name="addressLine2" placeholder="Suite 200" ng-maxlength="40" ng-minlength="2" ng-model="sc.addressTwo"/>
+      </div>
+
+      <div class="form-row">
+        <label>City</label>
+        <input type="text" name="city" placeholder="Providence" ng-pattern="/^[A-Za-z . ,'-]+$/" required ng-model="sc.city"/>
+        <div class="form-error" ng-show="sc.reviewForm.city.$dirty && sc.reviewForm.city.$invalid && sc.isSubmitted">
+          City should be at least 2 characters in length.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>State</label>
+        <select name="state" required ng-model="sc.state">
+          <option value="">--Choose One--</option>
+          <option value="ri">Rhode Island</option>
+          <option value="ma">Massachusetts</option>
+          <option value="ct">Connecticut</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Postal Code</label>
+        <input type="text" name="zip" placeholder="02903" ng-pattern="/^\d{5}(?:[-\s]\d{4})?$/" required ng-model="sc.zip"/>
+        <div class="form-error" ng-show="sc.reviewForm.zip.$dirty && sc.reviewForm.zip.$invalid && sc.isSubmitted">
+          Postal code should be 5 digits long.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="(401)739-5000" ng-pattern="/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/" required ng-model="sc.phone"/>
+        <div class="form-error" ng-show="sc.reviewForm.phone.$dirty && sc.reviewForm.phone.$invalid && sc.isSubmitted">
+          Phone number should be 10 digits long. <br />Please include your area code.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="ABCCompany@email.com" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required ng-model="sc.email"/>
+        <div class="form-error" ng-show="sc.reviewForm.email.$dirty && sc.reviewForm.email.$invalid && sc.isSubmitted">
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <p class="form-notes">Each sponsor will receive their company’s logo on the official race t-shirt and on the signage at the registration
+        desk on race day. An audio announcement with all sponsors will be included at the beginning of the race.</p>
+
+      <div class="form-row">
+        <label>Sponsor Level</label>
+        <select name="sponsorLevel" required ng-model="sc.sponsorLevel">
+          <option value="">--Choose One--</option>
+          <option value="platinum">Platinum ($1,000+)</option>
+          <option value="gold">Gold ($500 - $999.99)</option>
+          <option value="silver">Silver ($250 - $499.99)</option>
+          <option value="bronze">Bronze ($50 - $249.99)</option>
+          <option value="other">Other (Gift Certificates, Merchandise)</option>
+        </select>
+      </div>
+      <p class="form-notes"><strong>Platinum and Gold Sponsors:</strong><br />Please send high-resolution copy of your company logo to:<br />
+      Kerin-Anne Rogers,<br />
+      19 Coolidge Avenue<br />
+      Weymouth, MA 02188
+      </p>
+
+      <div class="form-row">
+        <label>Donation Amount $</label>
+        <input type="number" name="amount" placeholder="1000" ng-min="1" required ng-model="sc.amount"/>
+        <div class="form-error" ng-show="sc.reviewForm.amount.$dirty && sc.reviewForm.amount.$invalid && sc.isSubmitted">
+          Donation amount must be greater than $1.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>I plan to also participate in the event</label>
+        <input type="checkbox" name="sponsorParticipant" value="true" ng-model="sc.sponsorParticipant"/>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div ng-show="sc.success === true">
+      <h2>Your sponsor information has been submitted! Thank you for supporting us!</h2>
+    </div>
+  </main>
+  <aside class="asideBg">
+    Checks can be made payable to: <strong>In Memory of Me, Tanner B., Inc</strong>
+    <p>Please mail all checks and gift certificates to:<br />
+      In Memory of Me Tanner B., Inc,<br />
+      P.O. Box 890212,<br />
+      Weymouth, MA 02189<br />
+    </p>
+    <p>To schedule pick up of your donation please contact Becky at (781) 626-1190.</p>
+  </aside>
+</div>

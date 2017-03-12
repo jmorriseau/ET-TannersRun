@@ -1,0 +1,50 @@
+<div class="content-container">
+  <main>
+    <h1>Contact Us</h1>
+
+    <form name="cc.reviewForm" ng-submit="cc.addRunner()" ng-hide="cc.success === true">
+
+      <div class="form-row">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Ryan Races" ng-maxlength="50" ng-minlength="2" required ng-model="cc.name"/>
+        <div class="form-error" ng-show="cc.reviewForm.name.$dirty && cc.reviewForm.name.$invalid && cc.isSubmitted">
+          Name should be at least 2 character in length.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="RyanRunsRaces@email.com" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required ng-model="cc.email"/>
+        <div class="form-error" ng-show="cc.reviewForm.email.$dirty && cc.reviewForm.email.$invalid && cc.isSubmitted">
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Subject</label>
+        <input type="text" name="subject" placeholder="Hello!" ng-maxlength="50" ng-minlength="2" required ng-model="cc.subject"/>
+        <div class="form-error" ng-show="cc.reviewForm.subject.$dirty && cc.reviewForm.subject.$invalid && cc.isSubmitted">
+          Subject should be at least 2 character in length.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Message</label>
+        <textarea name="message" required ng-model="cc.message" rows="4" cols="50"></textarea>
+        <div class="form-error" ng-show="cc.reviewForm.message.$dirty && cc.reviewForm.message.$invalid && cc.isSubmitted">
+          Please enter the content of your message.
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div ng-show="cc.success === true">
+      <h2>Thank you for contacting us.<br /> We will be in touch soon!</h2>
+    </div>
+
+  </main>
+  <aside class="asideBg">
+
+  </aside>
+</div>

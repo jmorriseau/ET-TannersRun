@@ -1,0 +1,109 @@
+<div class="content-container">
+  <main>
+    <h1>Registration Form</h1>
+
+    <form name="rc.reviewForm" ng-submit="rc.addRunner()" ng-hide="rc.success === true">
+      <div class="form-row">
+        <label>First Name</label>
+        <input type="text" name="firstName" placeholder="Sammy" ng-maxlength="50" ng-minlength="2" required ng-model="rc.firstName"/>
+        <div class="form-error" ng-show="rc.reviewForm.firstName.$dirty && rc.reviewForm.firstName.$invalid && rc.isSubmitted">
+          First name should be at least 2 character in length.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Last Name</label>
+        <input type="text" name="lastName" placeholder="Smith" ng-maxlength="50" ng-minlength="2" required ng-model="rc.lastName"/>
+        <div class="form-error" ng-show="rc.reviewForm.lastName.$dirty && rc.reviewForm.lastName.$invalid && rc.isSubmitted">
+          Last name should be at least 2 character in length.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="SammySmith@email.com" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required ng-model="rc.email"/>
+        <div class="form-error" ng-show="rc.reviewForm.email.$dirty && rc.reviewForm.email.$invalid && rc.isSubmitted">
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Gender</label>
+        <select name="gender" required ng-model="rc.gender">
+          <option value="">--Choose One--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Birthday:</label>
+        <input type="date" name="birthday" placeholder="yyyy-MM-dd" min="1900-01-01" max="{{rc.maxDate}}" required ng-model="rc.birthday"/>
+        <div class="form-error" ng-show="rc.reviewForm.birthday.$dirty && rc.reviewForm.birthday.$invalid && rc.isSubmitted">
+          Please enter your birthday in the format mm/dd/yyyy.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Phone:</label>
+        <input type="tel" name="phone" placeholder="(401)739-5000" ng-pattern="/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/" required ng-model="rc.phone"/>
+        <div class="form-error" ng-show="rc.reviewForm.phone.$dirty && rc.reviewForm.phone.$invalid && rc.isSubmitted">
+          Phone number should be 10 digits long. <br />Please include your area code.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Address Line 1</label>
+        <input type="text" name="addressLine1" placeholder="15 Main St" ng-pattern="/^\d+\s[A-z]+\s[A-z]+/" required ng-model="rc.addressOne"/>
+        <div class="form-error" ng-show="rc.reviewForm.addressLine1.$dirty && rc.reviewForm.addressLine1.$invalid && rc.isSubmitted">
+          Address should be in the proper format (ex: 1 Main St).
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Address Line 2</label>
+        <input type="text" name="addressLine2" placeholder="Suite 200" ng-maxlength="40" ng-minlength="2" ng-model="rc.addressTwo"/>
+      </div>
+
+      <div class="form-row">
+        <label>City</label>
+        <input type="text" name="city" placeholder="Providence" ng-pattern="/^[A-Za-z . ,'-]+$/" required ng-model="rc.city"/>
+        <div class="form-error" ng-show="rc.reviewForm.city.$dirty && rc.reviewForm.city.$invalid && rc.isSubmitted">
+          City should be at least 2 characters in length.
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>State</label>
+        <select name="state" required ng-model="rc.state">
+          <option value="">--Choose One--</option>
+          <option value="ri">Rhode Island</option>
+          <option value="ma">Massachusetts</option>
+          <option value="ct">Connecticut</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Postal Code</label>
+        <input type="text" name="zip" placeholder="02903" ng-pattern="/^\d{5}(?:[-\s]\d{4})?$/" required ng-model="rc.zip"/>
+        <div class="form-error" ng-show="rc.reviewForm.zip.$dirty && rc.reviewForm.zip.$invalid && rc.isSubmitted">
+          Postal code should be 5 digits long.
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div ng-show="rc.success === true">
+      <h2>Your registration has been submitted. <br />Thank your for supporting us!<br />Bag pickup will be announced soon.</h2>
+    </div>
+
+  </main>
+  <aside class="asideBg">
+    <h3>In-Person Registration</h3>
+    <p>
+      Bag pick up: To be announced<br />
+      Race day: September 16th, 2017 at Murphy School, 7:30 AM
+    </p>
+  </aside>
+</div>

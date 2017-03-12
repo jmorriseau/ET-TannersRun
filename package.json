@@ -1,0 +1,31 @@
+{
+  "name": "et-tannersrun",
+  "version": "1.0.0",
+  "description": "Tanners run application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmorriseau/ET-TannersRun.git"
+  },
+  "author": "jmorriseau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmorriseau/ET-TannersRun/issues"
+  },
+  "homepage": "https://github.com/jmorriseau/ET-TannersRun#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
