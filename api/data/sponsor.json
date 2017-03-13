@@ -1,0 +1,167 @@
+[{
+	"_id": {
+		"$oid": "58c48922632c0af372cb6214"
+	},
+	"nameOfCompany": "Bottomline",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200",
+	"city": "Providence",
+	"state": "RI",
+	"zip": "02903",
+	"phone": "401-621-7900",
+	"email": "julie@bt.com",
+	"sponsorLevel": "platinum",
+	"amount": 1000,
+	"sponsorParticipant": true,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c48a59632c0af372cb6217"
+	},
+	"nameOfCompany": "Bottomline",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200",
+	"city": "Providence",
+	"state": "RI",
+	"zip": "02903",
+	"phone": "401-621-7900",
+	"email": "julie@bt.com",
+	"sponsorLevel": "platinum",
+	"amount": 1000,
+	"sponsorParticipant": true,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4962833d517f7d8ab23d4"
+	},
+	"nameOfCompany": "Scarlet",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "508-840-3318",
+	"email": "bobby@gmail.com",
+	"sponsorLevel": "gold",
+	"amount": 299,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c497b033d517f7d8ab23d5"
+	},
+	"nameOfCompany": "SupermN",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "508-840-3318",
+	"email": "bobby@gmail.com",
+	"sponsorLevel": "silver",
+	"amount": 2444,
+	"sponsorParticipant": true,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4984133d517f7d8ab23d7"
+	},
+	"nameOfCompany": "ABC Company",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "508-840-3318",
+	"email": "bobby@gmail.com",
+	"sponsorLevel": "gold",
+	"amount": 553,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4987533d517f7d8ab23d8"
+	},
+	"nameOfCompany": "Mary Co",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "508-840-3318",
+	"email": "bobby@gmail.com",
+	"sponsorLevel": "silver",
+	"amount": 3000,
+	"sponsorParticipant": true,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c498bc33d517f7d8ab23d9"
+	},
+	"nameOfCompany": "Lundy Plumbing \u0026 Heating, Inc.",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "508-840-3318",
+	"email": "bobby@gmail.com",
+	"sponsorLevel": "gold",
+	"amount": 242,
+	"sponsorParticipant": true,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4991f33d517f7d8ab23da"
+	},
+	"nameOfCompany": "Liberty Bay Credit Union",
+	"addressLine1": "15 Park Row W",
+	"addressLine2": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "508-840-3318",
+	"email": "bobby@gmail.com",
+	"sponsorLevel": "bronze",
+	"amount": 24,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c5dd989c60e54cb172baaf"
+	},
+	"nameOfCompany": "ABC company",
+	"addressLine1": "1 Main St",
+	"addressLine2": "",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "4016217900",
+	"email": "abc@email.com",
+	"sponsorLevel": "platinum",
+	"amount": 4000,
+	"sponsorParticipant": true,
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c5dde79c60e54cb172bab0"
+	},
+	"nameOfCompany": "ABC company",
+	"addressLine1": "1 Main St",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"phone": "4016217900",
+	"email": "ab@email.com",
+	"sponsorLevel": "platinum",
+	"amount": 4000,
+	"sponsorParticipant": true,
+	"__v": 0
+}]
+

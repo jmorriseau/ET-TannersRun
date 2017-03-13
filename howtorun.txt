@@ -1,0 +1,6 @@
+In order to run this application you will first need to install nodejs. You will then need to create a local folder in which to hold the project code. Then, in command line, you need to navigate to the local folder. Once you have done this you can clone the repository for the project using "git clone https://github.com/jmorriseau/ET-TannersRun.git". Once you have cloned the repository, you will need to do an "npm install" to install all the dependencies for the project. From this point you can type "node app.js" in the terminal which will stand up the node server and allow you to run the application. If you wish to also create a mongodb you will need to create a new db called tannerb and add each collection to it. I have exported each collection to the data folder so you can just import them. In the command line you can use the following lines to import each collection:
+"mongoimport	--db	tannerb	--collection	contact	--jsonArray	api/data/contact.json"
+"mongoimport	--db	tannerb	--collection	runner	--jsonArray	api/data/runner.json"
+"mongoimport	--db	tannerb	--collection	sponsor	--jsonArray	api/data/sponsor.json"
+
+Importing the collection will automatically create the tannerb database. At this point you will be able to run the application and send and receive data from the mongodb.

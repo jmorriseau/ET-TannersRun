@@ -1,0 +1,206 @@
+[{
+	"_id": {
+		"$oid": "58c4a3cef3591b00492bdde6"
+	},
+	"firstName": "Scarlet",
+	"lastName": "Beau",
+	"email": "scar@email.com",
+	"gender": "female",
+	"birthday": {
+		"$date": "2014-03-31T04:00:00.000Z"
+	},
+	"phone": "5088403318",
+	"addressOne": "15 Park Row W",
+	"addressTwo": "Suite 200",
+	"city": "Providence",
+	"state": "RI",
+	"zip": "02903",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4a41af3591b00492bdde7"
+	},
+	"firstName": "Sammy",
+	"lastName": "Smith",
+	"email": "sammy@email.com",
+	"gender": "male",
+	"birthday": {
+		"$date": "1999-03-31T05:00:00.000Z"
+	},
+	"phone": "401-621-7900",
+	"addressOne": "1 Main St",
+	"addressTwo": "Apt 4",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02908",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4a51cf3591b00492bdde8"
+	},
+	"firstName": "Sunday",
+	"lastName": "Adams",
+	"email": "sadams@email.com",
+	"gender": "female",
+	"birthday": {
+		"$date": "1990-09-09T04:00:00.000Z"
+	},
+	"phone": "(401)621-7900",
+	"addressOne": "15 Park St",
+	"addressTwo": "Apt 1",
+	"city": "East Greenwich",
+	"state": "ri",
+	"zip": "02777",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4a5b3f3591b00492bdde9"
+	},
+	"firstName": "Peter",
+	"lastName": "Griffin",
+	"email": "pg@email.com",
+	"gender": "male",
+	"birthday": {
+		"$date": "1990-10-30T05:00:00.000Z"
+	},
+	"phone": "401-621-7900",
+	"addressOne": "1 Main St",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4aaf4f3591b00492bddea"
+	},
+	"firstName": "Sammy",
+	"lastName": "Sunshine",
+	"email": "ssunshine@email.com",
+	"gender": "male",
+	"birthday": {
+		"$date": "2017-09-09T04:00:00.000Z"
+	},
+	"phone": "4016217900",
+	"addressOne": "15 Park Row W",
+	"addressTwo": "Suite 200",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4abb5f3591b00492bddeb"
+	},
+	"firstName": "Becky",
+	"lastName": "Barbs",
+	"email": "bb@email.com",
+	"gender": "female",
+	"birthday": {
+		"$date": "2017-09-09T04:00:00.000Z"
+	},
+	"phone": "4016217900",
+	"addressOne": "1 Smith St",
+	"city": "Seekonk",
+	"state": "ma",
+	"zip": "02777",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4ac4bf3591b00492bddec"
+	},
+	"firstName": "Albert",
+	"lastName": "Smith",
+	"email": "asmith@email.com",
+	"gender": "male",
+	"birthday": {
+		"$date": "2017-09-09T04:00:00.000Z"
+	},
+	"phone": "4015559800",
+	"addressOne": "1 School St",
+	"city": "Seekonk",
+	"state": "ma",
+	"zip": "02777",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c4b09cf3591b00492bdded"
+	},
+	"firstName": "John",
+	"lastName": "Appleseed",
+	"email": "jappleseed@emai.com",
+	"gender": "male",
+	"birthday": {
+		"$date": "2014-09-09T04:00:00.000Z"
+	},
+	"phone": "401-621-7900",
+	"addressOne": "1 Market St",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c5afe51b678d20a4f5e626"
+	},
+	"firstName": "Kim",
+	"lastName": "Jackson",
+	"email": "kjackson@email.com",
+	"gender": "female",
+	"birthday": {
+		"$date": "1990-09-09T04:00:00.000Z"
+	},
+	"phone": "4016217900",
+	"addressOne": "15 Park Row W",
+	"addressTwo": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c5d8d6baa8544a774aa3f1"
+	},
+	"firstName": "Bobby",
+	"lastName": "Smith",
+	"email": "sammsmith@email.com",
+	"gender": "female",
+	"birthday": {
+		"$date": "2014-09-09T04:00:00.000Z"
+	},
+	"phone": "4016217900",
+	"addressOne": "15 Park Row W",
+	"addressTwo": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "58c5dd2e9c60e54cb172baae"
+	},
+	"firstName": "Scarlet",
+	"lastName": "Anderson",
+	"email": "sanderson@email.com",
+	"gender": "female",
+	"birthday": {
+		"$date": "2016-01-09T05:00:00.000Z"
+	},
+	"phone": "4016217900",
+	"addressOne": "15 Park Row W",
+	"addressTwo": "Suite 200 Bottomline",
+	"city": "Providence",
+	"state": "ri",
+	"zip": "02903",
+	"__v": 0
+}]
+
